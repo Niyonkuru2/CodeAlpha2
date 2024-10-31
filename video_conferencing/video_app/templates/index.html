@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Conference</title>
+  <!---link my css--->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <body>
+    <div class="intro">
+        <h2>Welcome to Unique Video Conferencing App!</h2>
+        <h2>You can create a meeting!</h2>
+        <h2>You can share screen with you friends!</h2>
+        <h2>You can invite friends to join a meeting!</h2>
+        <!-- create a signup and signin button-->
+        <a href="{% url 'login' %}" class="button">Sign In</a>
+        <a href="{% url 'register' %}" class="button">Sign Up</a>
+    </div>
+  </body>
+</head>
+</html>
